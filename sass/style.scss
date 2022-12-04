@@ -1,0 +1,16 @@
+
+$font-stack: Yantramanav, sans-serif;
+$primary-color: #2c2c2c;
+$background-color: #e2e2e2;
+$background-header: #5e5e5e;
+
+body {
+  font: 100% $font-stack ! important;
+  background-color: $background-color;
+  color: $primary-color;
+  width: 100%;
+}
+
+header {
+  background-color: $background-header;
+}

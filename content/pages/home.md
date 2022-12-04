@@ -1,0 +1,6 @@
++++
+title = "Home"
+weight = 1
++++
+
+Hello dear web wanderer and welcome to my home page. The blog that used to be here is now history, but I will keep posting updates about concerts, record releases and miscellaneous information about my work. I hope that you have a pleasant time staying at this page, and wish you all the best and safe travels further into the internet.

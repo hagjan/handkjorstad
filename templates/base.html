@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
+    <title>Hans Kjorstad</title>
+  </head>
+
+  <body>
+    <header>
+    <h1>Hans Kjorstad</h1>
+      <div>
+        {% set page_section = get_section(path="pages/_index.md") %}
+        <ul>
+        {% for page in page_section.pages %}
+          <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+        {% endfor %}
+        </ul>
+      </div>
+    </header>
+    <section class="section">
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </section>
+  </body>
+
+</html>

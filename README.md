@@ -1,2 +1,0 @@
-# handkjorstad
-Heimeside
