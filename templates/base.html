@@ -8,16 +8,19 @@
   </head>
 
   <body>
-    <header>
-    <h1>Hans Kjorstad</h1>
-      <div>
+    <header class="header">
+      <a href="/" class="logo">Hans Kjorstad</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />  
+    <label class="menu-icon" for="menu-btn">
+      <span class="navicon"></span>
+    </label>
         {% set page_section = get_section(path="pages/_index.md") %}
-        <ul>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
         {% for page in page_section.pages %}
           <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
         {% endfor %}
         </ul>
-      </div>
     </header>
     <section class="section">
       <div class="container">
