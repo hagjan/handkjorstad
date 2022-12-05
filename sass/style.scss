@@ -1,9 +1,10 @@
-
+// VARIABLES
 $font-stack: Yantramanav, sans-serif;
 $primary-color: #2c2c2c;
 $background-color: #e2e2e2;
 $background-header: #00827d;
 
+// FOUNDATION
 body {
   font: 100% $font-stack ! important;
   margin: 0;
@@ -16,12 +17,14 @@ a {
   color: #000;
 }
 
+// CONTENT
 .container {
   margin-top: 65px;
   padding: 3em;
   line-height: 1.5;
 }
 
+// HEADER
 .header {
   background-color: $background-header;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -87,7 +90,7 @@ a {
       color: #f4f4f4;
       float: left;
       font-size: 1.25em;
-      line-height: 2.5em;
+      line-height: 2.75em;
       margin-left: 20px;
       text-decoration-line: underline;
       text-decoration-color: #27516d;
@@ -136,6 +139,7 @@ a {
     }
   }
 }
+
 @media (min-width: 48em) {
   .header {
     li {
