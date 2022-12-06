@@ -1,12 +1,15 @@
 // VARIABLES
 $font-stack: Yantramanav, sans-serif;
-$primary-color: #2c2c2c;
+$primary-color: #1e0000;
 $background-color: #e2e2e2;
-$background-header: #00827d;
+$background-header: #1e0000;
+$header-primary-color: #e2e2e2;
+$header-secondary-color: #bc6d4F;
 
 // FOUNDATION
 body {
   font: 100% $font-stack ! important;
+  font-size: 18px;
   margin: 0;
   background-color: $background-color;
   color: $primary-color;
@@ -44,17 +47,17 @@ a {
       display: block;
       padding: 20px 20px;
       // border-right: 1px solid #f4f4f4;
-      color: #f4f4f4;
+      color: $header-primary-color;
       text-decoration: none;
       &:hover {
-        color: #27516d;
+        color: $header-secondary-color;
       }
     }
   }
   .menu-btn {
-    &:hover {
-      background-color: #f4f4f4;
-    }
+    // &:hover {
+    //   background-color: red;
+    // }
     display: none;
     &:checked {
       ~ {
@@ -87,13 +90,13 @@ a {
   }
 
   .logo {
-      color: #f4f4f4;
+      color: $header-primary-color;
       float: left;
       font-size: 1.25em;
       line-height: 2.75em;
       margin-left: 20px;
       text-decoration-line: underline;
-      text-decoration-color: #27516d;
+      text-decoration-color: $header-secondary-color;
       text-decoration-thickness: 4px;
       text-underline-offset: 8px;
   }
@@ -110,14 +113,14 @@ a {
     position: relative;
     user-select: none;
     .navicon {
-      background: #333;
+      background: $header-primary-color;
       display: block;
       height: 2px;
       position: relative;
       transition: background .2s ease-out;
       width: 18px;
       &:before {
-        background: #333;
+        background: $header-primary-color;
         content: '';
         display: block;
         height: 100%;
@@ -127,7 +130,7 @@ a {
         top: 5px;
       }
       &:after {
-        background: #333;
+        background: $header-primary-color;
         content: '';
         display: block;
         height: 100%;
@@ -142,13 +145,16 @@ a {
 
 @media (min-width: 48em) {
   .header {
+    height: 100%;
+    width: 200px;
     li {
       float: left;
       a {
-        padding: 20px 30px;
+        padding: 16px 30px;
       }
     }
     .menu {
+      margin-top: 20px;
       clear: none;
       float: right;
       max-height: none;
@@ -160,5 +166,7 @@ a {
 
   .container {
     padding: 3em;
+    margin-top: 0;
+    margin-left: 200px;
   }
 }
