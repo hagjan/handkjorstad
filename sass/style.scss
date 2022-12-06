@@ -20,7 +20,7 @@ a {
 // CONTENT
 .container {
   margin-top: 65px;
-  padding: 3em;
+  padding: 1.5em;
   line-height: 1.5;
 }
 
@@ -156,5 +156,9 @@ a {
     .menu-icon {
       display: none;
     }
+  }
+
+  .container {
+    padding: 3em;
   }
 }
